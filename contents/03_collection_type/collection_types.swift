@@ -47,8 +47,22 @@ let immutableArray = [1, 2, 3]
 //immutableArray.append(4)
 //immutableArray.removeAll()
 
+var numbers: Array<Int> = Array<int>()
+numbers.append(1)
+numbers.append(2)
+numbers.append(3)
+
+numbers[0] // 1
+numbers[1] // 2
+ 
+numbers.insert(4, at:2) // [1,2,4,3]
+numbers // [1,2,4,3]
+
+var name: [String] = []
+
 
 // 2. Dictionary
+
 // Key가 String 타입이고 Value가 Any인 빈 Dictionary 생성
 var anyDictionary: Dictionary<String, Any> = [String: Any]()
 anyDictionary["someKey"] = "value"
@@ -76,6 +90,14 @@ let initalizedDictionary: [String: String] = ["name": "yagom", "gender": "male"]
 // name 키에 해당하는 값이 Dictionary에 존재하지 않을 수 있으므로
 // 컴파일 오류 발생 - 옵셔널 파트에서 상세히 다룹니다
 //let someValue: String = initalizedDictionary["name"]
+
+var dic: [String: Int] = ["willer", 1]
+dic["윌러"] = 3
+dic["정기"] = 5
+dic
+
+// 삭제
+dic.removeValue(forKey: "윌러")
 
 
 // 3. Set
