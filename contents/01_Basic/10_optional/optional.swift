@@ -2,7 +2,7 @@
 
 import Swift
 
-//MARK:- 암시적 추출 옵셔널
+//MARK :- 암시적 추출 옵셔널
 // Implicitly Unwrapped Optional
 
 var implicitlyUnwrappedOptionalValue: Int! = 100
